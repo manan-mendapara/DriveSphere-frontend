@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/next";
 import LoadingPage from './global-pages/LoadingPage.jsx';
 import ErrorPage from './global-pages/ErrorPage.jsx';
 import Home from './pages/Home.jsx';
@@ -17,7 +16,7 @@ function App() {
     <Router>
       <Routes>
         {/* Loading page - initial route */}
-        <Analytics/>
+
         <Route path="/" element={<LoadingPage />} />
 
         {/* Main application routes */}
