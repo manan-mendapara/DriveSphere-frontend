@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import LoadingPage from './global-pages/LoadingPage.jsx';
 import ErrorPage from './global-pages/ErrorPage.jsx';
 import Home from './pages/Home.jsx';
@@ -37,6 +38,7 @@ function App() {
         {/* Redirect root to home after loading */}
         <Route path="/app" element={<Navigate to="/home" replace />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
