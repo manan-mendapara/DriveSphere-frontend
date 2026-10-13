@@ -1,0 +1,313 @@
+
+/* ========================================
+   DriveSphere Compare Page
+======================================== */
+
+.compare-page {
+  width: 100%;
+  min-height: 65vh;
+  padding: 106px 24px 72px;
+  box-sizing: border-box;
+  color: #243449;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.compare-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   Page Header
+======================================== */
+
+.compare-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.compare-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+  color: #3977b8;
+  background: #edf5ff;
+  border: 1px solid #dceafb;
+  border-radius: 16px;
+}
+
+.compare-heading-content {
+  min-width: 0;
+}
+
+.compare-eyebrow {
+  margin: 0 0 5px;
+  color: #3977b8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  line-height: 1.7;
+}
+
+.compare-title {
+  margin: 0;
+  color: #243449;
+  font-size: clamp(27px, 4vw, 35px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.compare-description {
+  max-width: 650px;
+  margin: 8px 0 0;
+  color: #718198;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   Comparison Toolbar
+======================================== */
+
+.compare-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+  padding: 17px 20px;
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(36, 52, 73, 0.025);
+}
+
+.compare-selection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.compare-count-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  color: #3977b8;
+  background: #edf5ff;
+  border-radius: 11px;
+}
+
+.compare-selection-title {
+  margin: 0;
+  color: #243449;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.compare-selection-count {
+  margin: 4px 0 0;
+  color: #718198;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   Action Buttons
+======================================== */
+
+.compare-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.compare-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.compare-action-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Wishlist Button */
+
+.compare-wishlist-button {
+  color: #ffffff;
+  background: #3977b8;
+  border-color: #3977b8;
+}
+
+.compare-wishlist-button:hover {
+  background: #2e659f;
+  border-color: #2e659f;
+  box-shadow: 0 4px 12px rgba(57, 119, 184, 0.17);
+}
+
+/* Clear Button */
+
+.compare-clear-button {
+  color: #64748b;
+  background: #ffffff;
+  border-color: #d9e4f0;
+}
+
+.compare-clear-button:hover {
+  color: #b42318;
+  background: #fff4f2;
+  border-color: #f0c4bf;
+}
+
+/* ========================================
+   Comparison Table
+======================================== */
+
+.compare-table-section {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Note below the table */
+
+.compare-storage-note {
+  margin: 22px 0 0;
+  color: #8493a7;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ========================================
+   Keyboard Accessibility
+======================================== */
+
+.compare-action-button:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   Responsive Design
+======================================== */
+
+@media (max-width: 900px) {
+  .compare-page {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .compare-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .compare-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .compare-page {
+    padding: 96px 16px 48px;
+  }
+
+  .compare-header {
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 24px;
+  }
+
+  .compare-heading-icon {
+    width: 49px;
+    height: 49px;
+    border-radius: 13px;
+  }
+
+  .compare-heading-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .compare-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.6px;
+  }
+
+  .compare-title {
+    font-size: 26px;
+  }
+
+  .compare-description {
+    font-size: 12px;
+  }
+
+  .compare-toolbar {
+    gap: 16px;
+    padding: 15px;
+    margin-bottom: 19px;
+  }
+
+  .compare-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .compare-action-button {
+    width: 100%;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .compare-page {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .compare-heading-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .compare-title {
+    font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .compare-action-button {
+    transition: none;
+  }
+
+  .compare-action-button:hover {
+    transform: none;
+  }
+}

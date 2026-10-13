@@ -1,0 +1,717 @@
+
+/* ========================================
+   DriveSphere About Page
+======================================== */
+
+.about-page {
+  width: 100%;
+  min-height: 70vh;
+  padding: 100px 24px 72px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #243449;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   Hero Section
+======================================== */
+
+.about-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  padding: 64px 28px 48px;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(157, 191, 227, 0.2),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(57, 119, 184, 0.1),
+      transparent 30%
+    ),
+    #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(36, 52, 73, 0.04);
+}
+
+.about-hero-decoration {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(57, 119, 184, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about-decoration-one {
+  top: -125px;
+  left: -75px;
+}
+
+.about-decoration-two {
+  right: -105px;
+  bottom: -130px;
+  width: 280px;
+  height: 280px;
+}
+
+.about-eyebrow,
+.about-cta-eyebrow {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #3977b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.about-eyebrow::before,
+.about-eyebrow::after {
+  width: 20px;
+  height: 1px;
+  background: #9dbfe3;
+  content: '';
+}
+
+.about-hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 22px 0 0;
+  color: #243449;
+  font-size: clamp(36px, 5.5vw, 60px);
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  line-height: 1.2;
+}
+
+.about-hero h1 span,
+.about-mission h2 span,
+.about-cta h2 span {
+  color: #3977b8;
+}
+
+.about-hero-tagline {
+  position: relative;
+  z-index: 1;
+  margin: 15px 0 0;
+  color: #3977b8;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.about-hero-description {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 15px auto 0;
+  color: #718198;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-primary-link,
+.about-cta-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  margin-top: 25px;
+  padding: 12px 21px;
+  color: #ffffff;
+  background: #3977b8;
+  border: 1px solid #3977b8;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-primary-link:hover,
+.about-cta-link:hover {
+  background: #2e659f;
+  border-color: #2e659f;
+  transform: translateY(-2px);
+}
+
+.about-hero-bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  color: #8493a7;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.about-hero-line {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: #9dbfe3;
+}
+
+/* ========================================
+   Mission Section
+======================================== */
+
+.about-mission {
+  max-width: 820px;
+  margin: 88px auto 92px;
+  text-align: center;
+}
+
+.about-section-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 16px;
+  color: #3977b8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-mission .about-section-label {
+  justify-content: center;
+}
+
+.about-section-label > span {
+  display: inline-block;
+  width: 23px;
+  height: 2px;
+  background: #3977b8;
+  border-radius: 2px;
+}
+
+.about-mission h2 {
+  margin: 0;
+  color: #243449;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 1.4;
+}
+
+.about-mission > p {
+  max-width: 760px;
+  margin: 19px auto 0;
+  color: #718198;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* ========================================
+   Shared Section Styles
+======================================== */
+
+.about-section {
+  margin-top: 76px;
+}
+
+.about-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 27px;
+}
+
+.about-section-heading h2 {
+  margin: 0;
+  color: #243449;
+  font-size: clamp(24px, 3.5vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 1.4;
+}
+
+.about-section-heading > p {
+  max-width: 300px;
+  margin: 0 0 3px;
+  color: #8493a7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   How It Works
+======================================== */
+
+.about-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-process-card {
+  position: relative;
+  min-width: 0;
+  padding: 25px 23px 27px;
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(36, 52, 73, 0.025);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.about-process-card:hover {
+  transform: translateY(-4px);
+  border-color: #c8d9ec;
+  box-shadow: 0 12px 28px rgba(36, 52, 73, 0.06);
+}
+
+.about-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.about-step-number {
+  color: #a7b9ce;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-icon-box {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #3977b8;
+  background: #edf5ff;
+  border: 1px solid #e1edfb;
+  border-radius: 13px;
+}
+
+.about-process-card h3 {
+  margin: 0 0 11px;
+  color: #243449;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-process-card > p {
+  margin: 0;
+  color: #718198;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* ========================================
+   Key Features
+======================================== */
+
+.about-features-section {
+  margin-top: 86px;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.about-feature-card {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 15px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: #c8d9ec;
+  box-shadow: 0 10px 25px rgba(36, 52, 73, 0.045);
+}
+
+.about-feature-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+
+.about-feature-card .about-icon-box {
+  width: 43px;
+  height: 43px;
+  border-radius: 11px;
+}
+
+.about-feature-number {
+  color: #b2c1d2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-feature-card h3 {
+  margin: 0 0 10px;
+  color: #243449;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.about-feature-card > p {
+  margin: 0;
+  color: #718198;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* ========================================
+   Call to Action
+======================================== */
+
+.about-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  min-height: 265px;
+  margin-top: 88px;
+  padding: 42px 48px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 95% 0%,
+      rgba(255, 255, 255, 0.65),
+      transparent 32%
+    ),
+    linear-gradient(125deg, #edf5ff 0%, #e4f0ff 100%);
+  border: 1px solid #dceafb;
+  border-radius: 20px;
+}
+
+.about-cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+}
+
+.about-cta-eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+}
+
+.about-cta h2 {
+  margin: 15px 0 0;
+  color: #243449;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 1.4;
+}
+
+.about-cta-content > p {
+  max-width: 480px;
+  margin: 12px 0 0;
+  color: #62758c;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.about-cta-link {
+  margin-top: 22px;
+}
+
+.about-cta-decoration {
+  position: absolute;
+  right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 185px;
+  color: rgba(57, 119, 184, 0.14);
+  border: 1px solid rgba(57, 119, 184, 0.15);
+  border-radius: 50%;
+}
+
+.about-cta-decoration::before,
+.about-cta-decoration::after {
+  position: absolute;
+  border: 1px solid rgba(57, 119, 184, 0.12);
+  border-radius: 50%;
+  content: '';
+}
+
+.about-cta-decoration::before {
+  inset: -20px;
+}
+
+.about-cta-decoration::after {
+  inset: 20px;
+}
+
+/* ========================================
+   Project Disclaimer
+======================================== */
+
+.about-disclaimer {
+  margin: 25px auto 0;
+  padding: 0 8px;
+  color: #8493a7;
+  font-size: 11px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.about-disclaimer span {
+  color: #62758c;
+  font-weight: 700;
+}
+
+/* ========================================
+   Accessibility
+======================================== */
+
+.about-primary-link:focus-visible,
+.about-cta-link:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   Responsive Layout
+======================================== */
+
+@media (max-width: 900px) {
+  .about-page {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .about-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-process-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .about-cta {
+    padding: 36px;
+  }
+
+  .about-cta-decoration {
+    right: 24px;
+    width: 145px;
+    height: 145px;
+  }
+
+  .about-cta-decoration svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 88px 16px 48px;
+  }
+
+  .about-hero {
+    min-height: auto;
+    padding: 50px 20px 35px;
+    border-radius: 18px;
+  }
+
+  .about-hero h1 {
+    margin-top: 19px;
+    font-size: 37px;
+    letter-spacing: -1.2px;
+  }
+
+  .about-hero-tagline {
+    font-size: 15px;
+  }
+
+  .about-hero-description {
+    font-size: 13px;
+  }
+
+  .about-hero-bottom {
+    margin-top: 25px;
+    font-size: 10px;
+  }
+
+  .about-mission {
+    margin: 65px auto;
+  }
+
+  .about-mission h2 {
+    font-size: 29px;
+  }
+
+  .about-mission > p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-section,
+  .about-features-section {
+    margin-top: 60px;
+  }
+
+  .about-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 26px;
+  }
+
+  .about-section-heading > p {
+    max-width: 100%;
+  }
+
+  .about-process-grid,
+  .about-features-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .about-process-card,
+  .about-process-card:last-child {
+    grid-column: auto;
+    padding: 21px;
+  }
+
+  .about-process-top {
+    margin-bottom: 17px;
+  }
+
+  .about-feature-card {
+    padding: 20px;
+  }
+
+  .about-feature-card-top {
+    margin-bottom: 15px;
+  }
+
+  .about-cta {
+    min-height: auto;
+    margin-top: 60px;
+    padding: 31px 23px;
+    border-radius: 16px;
+  }
+
+  .about-cta-content {
+    max-width: 100%;
+  }
+
+  .about-cta-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+
+  .about-cta h2 {
+    font-size: 29px;
+  }
+
+  .about-cta-decoration {
+    top: 15px;
+    right: -65px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .about-cta-decoration svg {
+    width: 85px;
+    height: 85px;
+  }
+
+  .about-disclaimer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-page {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .about-hero {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .about-mission h2 {
+    font-size: 25px;
+  }
+
+  .about-section-heading h2 {
+    font-size: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-primary-link,
+  .about-cta-link,
+  .about-process-card,
+  .about-feature-card {
+    transition: none;
+  }
+}

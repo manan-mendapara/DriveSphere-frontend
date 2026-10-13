@@ -1,0 +1,19 @@
+/* ========================================
+   DriveSphere Main Layout
+======================================== */
+
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #f8fbff;
+  color: #243449;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.main-layout *,
+.main-layout *::before,
+.main-layout *::after {
+  box-sizing: border-box;
+}

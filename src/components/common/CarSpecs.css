@@ -1,0 +1,141 @@
+
+/* Main specifications container */
+.car-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Specification groups */
+.car-specs__section {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Group heading */
+.car-specs__heading {
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #e3eaf3;
+
+  color: #243449;
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+/* Responsive specification grid */
+.car-specs__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual specification */
+.car-specs__item {
+  min-width: 0;
+  padding: 15px 16px;
+
+  border: 1px solid #e3eaf3;
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(35, 65, 100, 0.035);
+
+  transition:
+    border-color 200ms ease,
+    background-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+@media (hover: hover) {
+  .car-specs__item:hover {
+    border-color: #c5d9f0;
+    background: #fcfdff;
+    box-shadow: 0 5px 14px rgba(57, 119, 184, 0.06);
+  }
+}
+
+/* Specification label */
+.car-specs__label {
+  margin: 0;
+
+  color: #718198;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  overflow-wrap: anywhere;
+}
+
+/* Specification value */
+.car-specs__value {
+  margin: 6px 0 0;
+
+  color: #243449;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.7;
+
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Unavailable information */
+.car-specs__unavailable {
+  margin: 0;
+  padding: 22px;
+
+  border: 1px dashed #cfdeed;
+  border-radius: 14px;
+
+  background: #f8fbff;
+  color: #718198;
+
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Tablet and desktop */
+@media (min-width: 640px) {
+  .car-specs {
+    gap: 32px;
+  }
+
+  .car-specs__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .car-specs__item {
+    padding: 17px;
+  }
+
+  .car-specs__heading {
+    font-size: 20px;
+  }
+}
+
+/* Wider screens */
+@media (min-width: 1200px) {
+  .car-specs__grid {
+    gap: 16px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .car-specs__item {
+    transition: none;
+  }
+}

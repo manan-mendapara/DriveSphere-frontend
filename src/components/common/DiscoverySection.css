@@ -1,0 +1,247 @@
+
+/* Main section */
+.discovery-section {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+/* Section heading */
+.discovery-section__header {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.discovery-section__eyebrow {
+  margin: 0 0 12px;
+
+  color: #3977b8;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.17em;
+  line-height: 1.6;
+}
+
+.discovery-section__title {
+  margin: 0;
+
+  color: #243449;
+  font-size: clamp(26px, 3.5vw, 36px);
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+
+  text-wrap: balance;
+}
+
+.discovery-section__description {
+  max-width: 590px;
+  margin: 14px auto 0;
+
+  color: #718198;
+  font-size: 16px;
+  line-height: 1.8;
+
+  text-wrap: balance;
+}
+
+/* Responsive cards grid */
+.discovery-section__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Discovery card */
+.discovery-card {
+  display: flex;
+  min-width: 0;
+  min-height: 245px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 28px 22px;
+
+  border: 1px solid #e2eaf3;
+  border-radius: 18px;
+
+  background: #ffffff;
+  color: #243449;
+  text-align: center;
+  text-decoration: none;
+
+  box-shadow: 0 3px 12px rgba(35, 65, 100, 0.04);
+
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+/* Icon */
+.discovery-card__icon {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #e0edfc;
+  border-radius: 16px;
+
+  background: #edf5ff;
+  color: #3977b8;
+
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+/* Card title */
+.discovery-card__title {
+  margin: 0;
+
+  color: #243449;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+/* Card description */
+.discovery-card__description {
+  max-width: 330px;
+  margin: 10px 0 18px;
+
+  color: #718198;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Explore link */
+.discovery-card__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  margin-top: auto;
+
+  color: #3977b8;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  transition: gap 200ms ease;
+}
+
+/* Hover */
+@media (hover: hover) {
+  .discovery-card:hover {
+    transform: translateY(-4px);
+    border-color: #b7d1ef;
+    background: #fcfdff;
+    box-shadow: 0 12px 26px rgba(57, 119, 184, 0.09);
+  }
+
+  .discovery-card:hover .discovery-card__icon {
+    transform: translateY(-2px);
+    background: #3977b8;
+    color: #ffffff;
+  }
+
+  .discovery-card:hover .discovery-card__action {
+    gap: 10px;
+  }
+}
+
+/* Keyboard accessibility */
+.discovery-card:focus-visible {
+  outline: 3px solid rgba(57, 119, 184, 0.35);
+  outline-offset: 4px;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .discovery-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .discovery-card {
+    padding: 28px 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .discovery-section__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .discovery-card {
+    min-height: 260px;
+    padding: 30px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .discovery-section {
+    margin-bottom: 44px;
+  }
+
+  .discovery-section__header {
+    margin-bottom: 24px;
+  }
+
+  .discovery-section__description {
+    font-size: 14px;
+  }
+
+  .discovery-section__grid {
+    gap: 14px;
+  }
+
+  .discovery-card {
+    min-height: 0;
+    padding: 22px 18px;
+    border-radius: 15px;
+  }
+
+  .discovery-card__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 14px;
+  }
+
+  .discovery-card__title {
+    font-size: 16px;
+  }
+
+  .discovery-card__description {
+    margin: 8px 0 14px;
+    font-size: 13px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .discovery-card,
+  .discovery-card__icon,
+  .discovery-card__action {
+    transition: none;
+  }
+
+  .discovery-card:hover,
+  .discovery-card:hover .discovery-card__icon {
+    transform: none;
+  }
+}

@@ -1,0 +1,312 @@
+
+/* ========================================
+   DriveSphere Cars Catalogue
+======================================== */
+
+.cars-page {
+  width: 100%;
+  min-height: 65vh;
+  padding: 106px 24px 72px;
+  box-sizing: border-box;
+  color: #243449;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cars-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   Page Header
+======================================== */
+
+.cars-header {
+  max-width: 780px;
+  margin-bottom: 30px;
+}
+
+.cars-eyebrow {
+  margin: 0 0 8px;
+  color: #3977b8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 1.7;
+}
+
+.cars-title {
+  margin: 0;
+  color: #243449;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 1.3;
+}
+
+.cars-description {
+  max-width: 680px;
+  margin: 12px 0 0;
+  color: #718198;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ========================================
+   Search & Filter Section
+======================================== */
+
+.cars-search-section {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.cars-search-row {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.cars-search-control {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Filter Toggle */
+
+.cars-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 132px;
+  min-height: 46px;
+  padding: 11px 16px;
+  color: #3977b8;
+  background: #ffffff;
+  border: 1px solid #c8d9ec;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cars-filter-toggle:hover,
+.cars-filter-toggle-active {
+  color: #2e659f;
+  background: #edf5ff;
+  border-color: #9dbfe3;
+}
+
+.cars-filter-panel {
+  margin-top: 18px;
+  animation: cars-filter-appear 0.2s ease-out;
+}
+
+/* ========================================
+   Results Toolbar
+======================================== */
+
+.cars-results-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 23px;
+  padding: 15px 18px;
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 12px;
+}
+
+.cars-results-count {
+  margin: 0;
+  color: #718198;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.cars-results-number {
+  color: #243449;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Sorting */
+
+.cars-sort-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-width: 0;
+}
+
+.cars-sort-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  color: #718198;
+  font-size: 12px;
+}
+
+.cars-sort-select {
+  max-width: 240px;
+  min-height: 39px;
+  padding: 8px 32px 8px 12px;
+  color: #243449;
+  background-color: #f8fbff;
+  border: 1px solid #d9e4f0;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cars-sort-select:focus {
+  border-color: #3977b8;
+  box-shadow: 0 0 0 3px rgba(57, 119, 184, 0.12);
+}
+
+.cars-sort-select option {
+  color: #243449;
+  background: #ffffff;
+}
+
+/* ========================================
+   Results
+======================================== */
+
+.cars-results {
+  width: 100%;
+  min-width: 0;
+}
+
+/* ========================================
+   Animations
+======================================== */
+
+@keyframes cars-filter-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   Accessibility
+======================================== */
+
+.cars-filter-toggle:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   Responsive Design
+======================================== */
+
+@media (max-width: 900px) {
+  .cars-page {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .cars-results-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cars-sort-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cars-sort-select {
+    flex: 1;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cars-page {
+    padding: 96px 16px 48px;
+  }
+
+  .cars-header {
+    margin-bottom: 23px;
+  }
+
+  .cars-title {
+    font-size: 29px;
+  }
+
+  .cars-description {
+    font-size: 12px;
+  }
+
+  .cars-search-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cars-filter-toggle {
+    width: 100%;
+    min-height: 43px;
+  }
+
+  .cars-results-toolbar {
+    gap: 13px;
+    padding: 14px;
+  }
+
+  .cars-sort-control {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cars-sort-select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .cars-page {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .cars-title {
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cars-filter-panel {
+    animation: none;
+  }
+
+  .cars-filter-toggle,
+  .cars-sort-select {
+    transition: none;
+  }
+}

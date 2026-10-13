@@ -1,0 +1,166 @@
+
+/* ========================================
+   DriveSphere Home Page
+======================================== */
+
+.home-page {
+  width: 100%;
+  min-height: 65vh;
+  padding: 96px 24px 72px;
+  box-sizing: border-box;
+  color: #243449;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   Hero Section
+======================================== */
+
+.home-hero-section {
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+/* ========================================
+   Engine Explorer
+======================================== */
+
+.home-engine-section {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+/* ========================================
+   General Home Sections
+======================================== */
+
+.home-section {
+  width: 100%;
+  margin-bottom: 76px;
+}
+
+.home-section-heading {
+  max-width: 700px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.home-section-eyebrow {
+  margin: 0 0 9px;
+  color: #3977b8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  line-height: 1.7;
+}
+
+.home-section-title {
+  margin: 0;
+  color: #243449;
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.home-section-description {
+  margin: 11px 0 0;
+  color: #718198;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   Discovery Section
+======================================== */
+
+.home-discovery-section {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* ========================================
+   Responsive Layout
+======================================== */
+
+@media (max-width: 1024px) {
+  .home-page {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .home-hero-section {
+    margin-bottom: 46px;
+  }
+
+  .home-engine-section {
+    margin-bottom: 60px;
+  }
+
+  .home-section {
+    margin-bottom: 64px;
+  }
+
+  .home-section-heading {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    padding: 88px 16px 48px;
+  }
+
+  .home-hero-section {
+    margin-bottom: 38px;
+  }
+
+  .home-engine-section {
+    margin-bottom: 46px;
+  }
+
+  .home-section {
+    margin-bottom: 50px;
+  }
+
+  .home-section-heading {
+    margin-bottom: 24px;
+  }
+
+  .home-section-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.8px;
+  }
+
+  .home-section-title {
+    font-size: 25px;
+  }
+
+  .home-section-description {
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+  }
+
+  .home-discovery-section {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-page {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .home-section-title {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,51 @@
+/* Responsive Styles */
+
+/* Mobile: 320px and above */
+@media (min-width: 320px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet: approximately 768px */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Laptop: approximately 1024px to 1440px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Large desktop: 1440px and above */
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 3rem;
+    max-width: 1920px;
+  }
+}
+
+/* Specific breakpoints for common layouts */
+@media (max-width: 767px) {
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+
+  .mobile-full-width {
+    width: 100% !important;
+  }
+
+  .text-center-mobile {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-grid {
+    display: grid !important;
+  }
+}
